@@ -8,23 +8,30 @@ import glasses from "../img/glasses.png"
 import Services from './Services';
 import Projects from './Projects';
 import Footer from '../components/layouts/Footer';
+
 function Homepage() {
+
+  
+  
+  
   return (
     <Layout>
       
-      
+      <section id='homepage'>
       <div id='box'>
       
       
     <div className='left-side'>
       <h1>Hy !  I Am <br/><h1 className='name'>Kartik Panchal</h1></h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, nostrum mollitia velit beatae illo consequatur.
+      <p>I am a full-stack web developer,i passionate about everything the world of website and contributing towards making a social impact on my users.
       </p>
-      <button className='btn'>Hire me</button>
+      <a href="mailto:kartikpanchal0463@gmail.com"><button className='btn'>Hire me</button></a>
+      
       <div className='icon-menu'>
-        <i class="icon fa-brands fa-linkedin"></i>
-        <i class="icon fa-brands fa-github"></i>
-        <i class="icon fa-brands fa-instagram"></i>
+        <a href='https://linkedin.com/in/kartik-panchal-' target='_blanck'><i class="icon fa-brands fa-linkedin"></i></a>
+        <a href='https://github.com/Kartik2810/' target='_blanck'><i class="icon fa-brands fa-github"></i></a>
+        
+        
       </div>
     </div>
     
@@ -44,7 +51,7 @@ function Homepage() {
       </div>
     </div>
     </div>
-    
+    </section>
     
     <Services/>
     <Projects/>

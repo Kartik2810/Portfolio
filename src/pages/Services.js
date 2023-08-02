@@ -1,17 +1,23 @@
 import React from 'react'
 import "../css/services.css"
+import CV from "../img/cv.jpg"
 function Services() {
     return (
         <>
-        
+        <section id='services'>
         <div className='services-box'>
             
             <div id='content'>
                 <h1 id='heading'>My Awesime <br/><span id='service'>Services</span></h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat corporis expedita ratione est minus fuga velit commodi vitae quo! Minima magnam voluptatem non totam hic iste nam tempora, ea officiis.</p>
-                <button id='btncv'>
-                    Download CV
-                </button>
+                <p>I have very good knowledge of forntend and backend technology,i believe in evolving my knowledge and learning continuocusly with everyday.
+                i wish to utilize my skills learn and grow together with your company 
+                sience it's only mission is to create simplified hi-tech website and i believe i can be part of that mission.</p>
+                <a href={CV} download="pdf">
+                    <button id='btncv'>
+                        Download CV
+                    </button>
+                </a>
+                
             </div>
             
             <div id='cards'>
@@ -40,7 +46,7 @@ function Services() {
             </div>
             
         </div>
-        
+        </section>
         </>
     )
 }

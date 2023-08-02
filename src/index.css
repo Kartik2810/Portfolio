@@ -15,7 +15,9 @@ body {
 
   background-color: rgb(251, 247, 242);
 }
-
+#headingg{
+  font-weight: bold;
+}
 
 .content{
   height: 100vh;
@@ -69,19 +71,21 @@ color:rgb(0, 153, 255)!important;
 }
 .write-side{
   width: 40vw;
+  
   margin: 2rem;
   margin-left: 8rem;
   padding:2rem;
   
 }
 #v1{
-  width: 30vw;
+  width: 35vw;
   
 }
 #v2{
   position: absolute;
-  right: 9rem;
-  width: 30vw;
+  right: 6rem;
+  width: 35vw;
+  
   top: 11rem;
   z-index: 1;
   
@@ -133,3 +137,15 @@ color:rgb(0, 153, 255)!important;
 .projects{
   text-align: center;
 }
+.nav-item{
+  cursor: pointer;
+}
+
+
+
+ img{
+  width: 99%;
+  
+  object-fit: cover;
+} 
+

@@ -1,40 +1,57 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import React,{useState}from 'react'
+import {Link} from "react-scroll"
+import {Modal} from "antd";
+import Resume from "../../img/cv.jpg"
+
 
 function Header() {
+    const [model,setModel] = useState(false)
+    const clickHandler = () =>{
+        setModel(true)
+    }
+    
     return (
         <>
+            <section className='navbaar'>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link className="link navbar-brand" to="/"><h1>My Portfolio</h1></Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-                    </div>
+                    <Link className="link navbar-brand" to="homepage"><h1 id='headingg'>My Portfolio</h1></Link>
+                    
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link className="link nav-link active" aria-current="page" to="/"><h5>Home</h5></Link>
+                                <Link className="link nav-link active" aria-current="page" to="homepage" spy={true} smooth={true}><h5>Home</h5></Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="link nav-link active " to="/project"><h5>Project</h5></Link>
+                                <Link className="link nav-link active " to="services"  spy={true} smooth={true}><h5>Services</h5></Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="link nav-link active" to="/resume"><h5>Resume</h5></Link>
+                                <Link className="link nav-link active " to="projects"  spy={true} smooth={true}><h5>Projects</h5></Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="link nav-link active" to="/contect"><h5>Contect</h5></Link>
+                                <Link className="link nav-link active" to="resume"  spy={true} smooth={true} onClick={clickHandler}><h5>Resume</h5></Link>
                             </li>
-                            <li className="nav-item ">
-                                <Link className="link nav-link active " to="/testimonial"><h5>Testimonial</h5></Link>
-                            </li>
+                            
+                            
                             
                         </ul>
                     </div>
                 </div>
             </nav>
+            <Modal
+                title="My Resume"
+                centered
+                open={model}
+                onOk={() => setModel(false)}
+                onCancel={() => setModel(false)}
+                width={750}
+            >
+                <div id='photo'>
+                <img  src={Resume} alt="" />
+                </div>
+                
+            </Modal>
+            </section>
         </>
     )
 }
