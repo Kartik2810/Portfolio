@@ -1,6 +1,6 @@
 import React from 'react'
 import "../css/services.css"
-import CV from "../img/cv.jpg"
+import CV from "../img/CV.pdf"
 function Services() {
     return (
         <>
@@ -12,7 +12,7 @@ function Services() {
                 <p>I have very good knowledge of forntend and backend technology,i believe in evolving my knowledge and learning continuocusly with everyday.
                 i wish to utilize my skills learn and grow together with your company 
                 sience it's only mission is to create simplified hi-tech website and i believe i can be part of that mission.</p>
-                <a href={CV} download="pdf">
+                <a href={CV} download="CV.pdf">
                     <button id='btncv'>
                         Download CV
                     </button>

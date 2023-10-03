@@ -19,6 +19,16 @@ function Projects() {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 >
+                <SwiperSlide>
+                <div className="card" >
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8&w=1000&q=80" className="card-img-top" alt="..."/>
+                    <div className="card-body">
+                        <h3 className="card-title">RealEstate</h3>
+                        <p className="card-text">React base static website and desugn only on css base and we give you best user experience.</p>
+                        <a href="https://realestate-dkx5.onrender.com" target='_blanck' className="btn btn-primary">view-Site</a>
+                    </div>
+                </div>
+                </SwiperSlide>   
                 
                 <SwiperSlide>
                 <div className="card" >
