@@ -19,7 +19,7 @@ function Projects() {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 >
-                <SwiperSlide>
+                 <SwiperSlide>
                 <div className="card" >
                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8&w=1000&q=80" className="card-img-top" alt="..."/>
                     <div className="card-body">
