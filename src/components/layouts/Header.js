@@ -1,7 +1,7 @@
 import React,{useState}from 'react'
 import {Link} from "react-scroll"
 import {Modal} from "antd";
-import Resume from "../../img/resume.jpeg"
+import Resume from "../../img/myResume.jpeg"
 
 
 function Header() {
