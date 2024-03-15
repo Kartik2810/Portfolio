@@ -114,4 +114,9 @@
         height: 80%;
     }
 }
+@media(max-width:430px){
+  #box{
+    height: 40vh;
+  }
+}
 

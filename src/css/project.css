@@ -14,4 +14,20 @@
     width: 20rem !important;
     opacity: 0.5;
 }
-
+@media(max-width:430px){
+   .main{
+    margin-top: 250px;
+   }
+   .projects{
+    margin-top: 10px;
+    font-weight: bold;
+        font-size: 30px;
+   }
+   
+   .swiper-slide{
+    position: relative;
+    right: 250px;
+    
+    margin-left: 250px;
+   }
+}

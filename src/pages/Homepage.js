@@ -17,25 +17,20 @@ function Homepage() {
       <section id='homepage'>
         <div id='box'>
           <div className='left-side'>
-
             <h1>Hy !  I Am <br/><h1 className='name'>Kartik Panchal</h1></h1>
             <p>I am a full-stack web developer,i passionate about everything the world of website and contributing towards making a social impact on my users.
             </p>
             <a href="mailto:panchalkartik463@gmail.com"><button className='btn'>Hire me</button></a>
-          
             <div className='icon-menu'>
               <a href='https://linkedin.com/in/kartik-panchal-/' target='_blanck'><i class="icon fa-brands fa-linkedin"></i></a>
               <a href='https://github.com/Kartik2810/' target='_blanck'><i class="icon fa-brands fa-github"></i></a>
             </div>
-
           </div>
-         
           <div className='right-side'>
-            
             <img id='v1' src={Vector1} alt="" />
             <img id='v2' src={Vector2} alt="" />
             <img id='v3' src={Myimage} alt="" />
-          
+            
             <div className='mytitle'>
               <img id='crown' src={Crown}alt="" />
               <h3 id='title'>Full Stack Developer</h3>
