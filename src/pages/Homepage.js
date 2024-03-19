@@ -2,10 +2,10 @@ import React from 'react';
 import "./homepage.css";
 import Layout from '../components/layouts/Layout';
 import Vector1 from "../img/Vector1.png";
-import Vector2 from "../img/Vector2.png"
-import Myimage from "../img/myimage.png"
-import Crown from "../img/crown.png"
-import glasses from "../img/glasses.png"
+import Vector2 from "../img/Vector2.png";
+import Myimage from "../img/myimage.png";
+import Crown from "../img/crown.png";
+import glasses from "../img/glasses.png";
 import Services from './Services';
 import Projects from './Projects';
 import Footer from '../components/layouts/Footer';
@@ -35,16 +35,14 @@ function Homepage() {
               <img id='crown' src={Crown}alt="" />
               <h3 id='title'>Full Stack Developer</h3>
             </div>
-          
+
             <div className='mytitle2'>
               <img id='glasses' src={glasses}alt="" />
               <h3 id='title2'>Hard Working</h3>
             </div>
-             
           </div>
         </div>
       </section>
-      
       <Services/>
       <Projects/>
       <Footer/>

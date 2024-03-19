@@ -1,33 +1,22 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .card{
-    margin: 5rem 3rem;
-    padding: 0;
-    width: 20rem !important;
+    margin: 2rem;
+    padding: 0.5rem;
+    width: 270px;
+}
+#project{
+    margin:1.5rem ;
+    text-align: center;
 }
 .card-4{
-    
-    position: relative;
-    left: 0px;
-    top: 0px;
-    margin: 5rem 3rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 270px;
     z-index: -1;
-    width: 20rem !important;
     opacity: 0.5;
-}
-@media(max-width:430px){
-   .main{
-    margin-top: 250px;
-   }
-   .projects{
-    margin-top: 10px;
-    font-weight: bold;
-        font-size: 30px;
-   }
-   
-   .swiper-slide{
-    position: relative;
-    right: 250px;
-    
-    margin-left: 250px;
-   }
 }

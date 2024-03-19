@@ -16,7 +16,6 @@ function Header() {
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <Link className="link navbar-brand" to="homepage"><h1 id='headingg'>My Portfolio</h1></Link>
-                    
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
@@ -31,9 +30,6 @@ function Header() {
                             <li className="nav-item ">
                                 <Link className="link nav-link active" to="resume"  spy={true} smooth={true} onClick={clickHandler}><h5>Resume</h5></Link>
                             </li>
-                            
-                            
-                            
                         </ul>
                     </div>
                 </div>
